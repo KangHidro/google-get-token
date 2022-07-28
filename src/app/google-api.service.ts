@@ -10,7 +10,7 @@ const authCodeFlowConfig: AuthConfig = {
   // strict discovery document disallows urls which not start with issuers url
   strictDiscoveryDocumentValidation: false,
 
-  // URL of the SPA to redirect the user to after login
+  // URL of the SPA to redirect the user to after login, // Need add to clientId setting
   redirectUri: environment.googleAuthRedirectUri,
 
   // The SPA's id. The SPA is registerd with this id at the auth-server
