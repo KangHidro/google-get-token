@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AuthConfig, OAuthService } from 'angular-oauth2-oidc';
 import { Subject } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 const authCodeFlowConfig: AuthConfig = {
   // Url of the Identity Provider
@@ -10,10 +11,10 @@ const authCodeFlowConfig: AuthConfig = {
   strictDiscoveryDocumentValidation: false,
 
   // URL of the SPA to redirect the user to after login
-  redirectUri: window.location.href,
+  redirectUri: environment.googleAuthRedirectUri,
 
   // The SPA's id. The SPA is registerd with this id at the auth-server
-  clientId: '15443613184-iekd01gaun74fu93stqoj9rjt1av6mem.apps.googleusercontent.com', // STC
+  clientId: environment.googleClientId,
 
   // set the scope for the permissions the client should request
   scope: 'openid profile',
