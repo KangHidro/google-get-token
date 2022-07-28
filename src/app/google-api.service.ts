@@ -10,7 +10,7 @@ const authCodeFlowConfig: AuthConfig = {
   strictDiscoveryDocumentValidation: false,
 
   // URL of the SPA to redirect the user to after login
-  redirectUri: window.location.origin,
+  redirectUri: window.location.href,
 
   // The SPA's id. The SPA is registerd with this id at the auth-server
   clientId: '15443613184-iekd01gaun74fu93stqoj9rjt1av6mem.apps.googleusercontent.com', // STC
