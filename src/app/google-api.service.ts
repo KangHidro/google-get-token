@@ -17,7 +17,7 @@ const authCodeFlowConfig: AuthConfig = {
   clientId: environment.googleClientId,
 
   // set the scope for the permissions the client should request
-  scope: 'openid profile',
+  scope: 'openid profile email',
 
   showDebugInformation: false,
 
